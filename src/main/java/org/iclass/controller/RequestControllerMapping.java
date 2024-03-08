@@ -3,6 +3,9 @@ package org.iclass.controller;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.iclass.controller.book.BookCaseFormController;
+import org.iclass.controller.book.BookCaseListController;
+import org.iclass.controller.book.BookCaseSaveController;
 import org.iclass.controller.community.ListController;
 import org.iclass.controller.community.ReadController;
 import org.iclass.controller.community.WriteController;
@@ -47,9 +50,14 @@ public class RequestControllerMapping {
 //		mapping.put(new RequestKeyValue("/book/list", "GET"), new NewBookListController());
 
 		//책장
-//		mapping.put(new RequestKeyValue("/book/bookcase","GET"), new BookCaseListController());
+		mapping.put(new RequestKeyValue("/book/bookcase","GET"), new BookCaseListController());
 //		mapping.put(new RequestKeyValue("/pay/success","GET"), new BookCasePayRequestSuccessController());
 //		mapping.put(new RequestKeyValue("/pay/fail","GET"), new BookCasePayRequestFailController());
+		
+		//추가
+		mapping.put(new RequestKeyValue("/book/form","GET"), new BookCaseFormController());
+		mapping.put(new RequestKeyValue("/book/save","POST"), new BookCaseSaveController());
+		
 
 		//공지사항(검색기능)
 //		mapping.put(new RequestKeyValue("/notice/list", "GET"), new NoticeListController());
