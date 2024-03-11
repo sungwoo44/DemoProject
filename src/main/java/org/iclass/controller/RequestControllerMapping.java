@@ -6,6 +6,7 @@ import java.util.Map;
 import org.iclass.controller.api.ApiPaymentSaveController;
 import org.iclass.controller.book.BookCaseFormController;
 import org.iclass.controller.book.BookCaseListController;
+import org.iclass.controller.book.BookCasePayRequestFailController;
 import org.iclass.controller.book.BookCasePayRequestSuccessController;
 import org.iclass.controller.book.BookCaseSaveController;
 import org.iclass.controller.community.CommentsController;
@@ -59,7 +60,7 @@ public class RequestControllerMapping {
 		//책장
 		mapping.put(new RequestKeyValue("/book/bookcase","GET"), new BookCaseListController());
 		mapping.put(new RequestKeyValue("/pay/success","GET"), new BookCasePayRequestSuccessController());
-//		mapping.put(new RequestKeyValue("/pay/fail","GET"), new BookCasePayRequestFailController());
+		mapping.put(new RequestKeyValue("/pay/fail","GET"), new BookCasePayRequestFailController());
 		//추가
 		mapping.put(new RequestKeyValue("/book/form","GET"), new BookCaseFormController());
 		mapping.put(new RequestKeyValue("/book/save","POST"), new BookCaseSaveController());
