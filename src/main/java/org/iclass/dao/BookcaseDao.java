@@ -56,7 +56,6 @@ public class BookcaseDao {
 		sqlSession.commit();
 		sqlSession.close();
 		return result;
-
 	}
 	
 	/*
