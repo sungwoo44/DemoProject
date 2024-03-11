@@ -97,6 +97,7 @@
 		const buyuser ='${user.userid}'
 		console.dir(payment)
 
+		//비동기 통신의 다른 방법 axios 라이브러리 : 우리 서버에 table에 정보를 insert 하기 위한 통신 
 		async function requestPaymentSave(payReq){
 			const result = await axios.post('../api/pay',payReq)
 			console.log(result)
