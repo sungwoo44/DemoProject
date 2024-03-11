@@ -61,18 +61,13 @@ public class RequestControllerMapping {
 		mapping.put(new RequestKeyValue("/book/bookcase","GET"), new BookCaseListController());
 		mapping.put(new RequestKeyValue("/pay/success","GET"), new BookCasePayRequestSuccessController());
 		mapping.put(new RequestKeyValue("/pay/fail","GET"), new BookCasePayRequestFailController());
-		
 		//추가
 		mapping.put(new RequestKeyValue("/book/form","GET"), new BookCaseFormController());
 		mapping.put(new RequestKeyValue("/book/save","POST"), new BookCaseSaveController());
 		
-//		//추가
-//		mapping.put(new RequestKeyValue("/book/form","GET"), new BookCaseFormController());
-//		mapping.put(new RequestKeyValue("/book/save","POST"), new BookCaseSaveController());
-//		
 		//공지사항(검색기능)
 //		mapping.put(new RequestKeyValue("/notice/list", "GET"), new NoticeListController());
-//		mapping.put(new RequestKeyValue("/notice/read", "GET"), new NoticeReadController()); 
+//		mapping.put(new RequestKeyValue("/notice/read", "GET"), new NoticeReadController());
 //		mapping.put(new RequestKeyValue("/notice/write", "GET"), new NoticeWriteController());
 //		mapping.put(new RequestKeyValue("/notice/save", "POST"),new NoticeWriteSaveController());
 //		mapping.put(new RequestKeyValue("/notice/update", "GET"), new NoticeUpdateController());
