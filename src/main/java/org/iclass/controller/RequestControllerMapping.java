@@ -6,6 +6,8 @@ import java.util.Map;
 import org.iclass.controller.book.BookCaseFormController;
 import org.iclass.controller.book.BookCaseListController;
 import org.iclass.controller.book.BookCaseSaveController;
+import org.iclass.controller.community.CommentsController;
+import org.iclass.controller.community.DeleteController;
 import org.iclass.controller.community.ListController;
 import org.iclass.controller.community.ReadController;
 import org.iclass.controller.community.UpdateController;
