@@ -33,9 +33,9 @@ public class NoticeUpdateController implements Controller {
 					NoticeDao dao = NoticeDao.getInstance();
 					Notice vo = dao.read(idx);
 					
-					//필터 적용하기 전에 admin 검사하는 부분입니다. // 필터 적용 전후를 확인하기 위해 주석 처리 하세요.
-					//모든 admin 페이지에 이 코드를 추가하는 것 대신에 필터를 사용하는 것입니다.
-					if(vo==null || !user.getUserid().equals("admin")) throw new RuntimeException();
+					//필터 적용하기 전에 admin감지하는 부분입니다. 필터 적용 ㅈㅓㄴ후를 확인하기 위해 주석 처리 하세요.
+					//모든 admin 페이지에 이 코드ㄴ를 추가하는 것 대신에 필터를 사용하는 것 입니다.  ㅇㅇ
+//					if(vo==null || !user.getUserid().equals("admin")) throw new RuntimeException();
 					request.setAttribute("vo", vo);				
 					
 					RequestDispatcher dispatcher = request.getRequestDispatcher("update.jsp");

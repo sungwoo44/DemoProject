@@ -34,7 +34,7 @@ public class NoticeFileDownloadController implements Controller {
 	    // 다운로드할 파일의 MIME 타입 설정
 	    response.setContentType("application/octet-stream;");
 	    response.setContentLength(fileSize);
-	    response.setHeader("Content-Disposition", "attachment; filename=" + URLEncoder.encode(originfile, "ISO-8859-1"));
+	    response.setHeader("Content-Disposition", "attachment; filename=" + URLEncoder.encode(originfile, "UTF-8"));
 	    response.setContentLengthLong(fileSize);
 	    
 	    // 파일 입력 스트림 생성
