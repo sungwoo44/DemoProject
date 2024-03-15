@@ -47,7 +47,9 @@ request객체의 contextPath를 el로 접근할 때에는 현재 jsp 객체 page
 			 	- 글에 이미지를 포함할 수 있습니다.</label></th> </tr>
 			 	<tr>
 			 		<td colspan="2">
+			 		<!-- quill 에디터 ui 가 표시되는 영역 -->
 			 		<div id="editor"></div>
+			 		<!-- quill 라이브러리로 작성한 글 -->
 					<input type="hidden" id="quill_html" name="summary">
 			 		</td>
 			 	</tr>
